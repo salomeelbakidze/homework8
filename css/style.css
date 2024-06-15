@@ -1,0 +1,195 @@
+
+/* Task1 */
+
+
+div{
+    background-color: rgb(195, 147, 240);
+    height: 180px;
+    width: 400px;
+    margin: auto;
+}
+button{
+    height: 60px;
+    width: 200px;
+    color: aliceblue;
+    background-color: rgb(195, 153, 235);
+    border: none;
+    margin-top: 60px;
+    margin-left: 105px;
+    box-shadow: 2px;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: -5px -4px 0 0 white, 
+    5px 4px 0 0 black;
+
+    text-shadow: 2px 5px 2px #CEC7C2;
+
+    transition-property: all;
+}
+button:hover{
+
+    box-shadow: 5px 4px 0 0 black inset, 
+    -5px -4px 0 0 white;
+
+    text-shadow: none;
+
+}
+
+/* Task2 */
+
+section{
+    width: 600px;
+    height: 500px;
+    margin: 100px auto;
+}
+
+.div1{
+    background-color: rgb(141, 103, 176);
+
+    width: 400px;
+    height: 333px;
+    /* border-radius: 10px; */
+    transition: all;
+    transition-duration: 1s;
+}
+
+img{
+    width: 300px;
+    margin: 50px;
+    /* border-radius: 10px; */
+    transition: all;
+    transition-duration: 1s;
+}
+p{
+    font-size: 15px;
+   
+   color: aliceblue;
+    padding-left: 50px;
+   
+    
+    
+}
+.div1:hover{
+    border-radius: 20px;
+    box-shadow: rgba(15, 25, 164, 0.25) 0px 54px 55px, rgba(15, 25, 164, 0.25) 0px -12px 30px, rgba(15, 25, 164, 0.25) 0px 4px 6px, rgba(15, 25, 164, 0.25) 0px 12px 13px, rgba(15, 25, 164, 0.25) 0px -3px 5px;
+
+
+}
+img:hover{
+    border-radius: 20px;
+}
+
+/* Task3 */
+
+h2{
+    
+    font-size: 140px;
+    
+    color: red;
+    animation-name: changecolor;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes changecolor{
+    from{
+        color: red;
+    }
+    to{ color: white;
+
+    }
+}
+/* Task5 */
+
+header{
+    
+    width: 450px;
+    height: 100px;
+    background-color: cadetblue;
+    
+}
+nav{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+   
+}
+
+
+.mid_li, .header_li{
+   display: inline-block;
+   text-shadow: 2px 5px 2px black;
+   color: aliceblue;
+   transition: all;
+   transition-duration: 1s;
+    
+}
+.mid_li{
+    margin-inline: 50px;
+}
+.mid_li, .header_li:hover{
+    cursor: pointer ;
+    box-shadow: 0 0 5px #494ee6,
+    0 0 20px #494ee6,
+    0 0 60px #494ee6,
+    0 0 150px #494ee6;
+
+}
+
+/* Task6 */
+
+.section2{
+  width: 400px;
+  height: 150px;
+  background-color: black;
+
+}
+
+h3{
+    color: aliceblue;
+    margin-left: 50px;
+    animation-name: changeclr;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes changeclr{
+    from{
+        color: white;
+    }
+    to{ color: black;
+
+    }
+}
+
+.div2{
+    border: #CEC7C2, solid;
+    background-color: black;
+    width: 300px;
+    height: 20px;
+    margin: auto;
+   
+}
+
+.div3{
+    background-color: white;
+    width: 299px;
+    height: 17px;
+    position: relative;
+    top: 0;
+    right: 0;
+    animation: blink-text 3s linear  infinite alternate forwards;
+    
+}
+@keyframes blink-text{
+   
+    0%{
+        top: 0;
+        right: 200px;
+        background-color: white;
+    }
+}
+
+
+
+
